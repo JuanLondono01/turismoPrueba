@@ -1,71 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name='description' content='Pagina para turismo'>
-    <meta name='author' content='Juan Londoño'>
-    <meta name='keywords' content='Viajes, Turismo, guatape'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./imgs/descarga.png" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-    <title>Turismo StrawHats</title>
-</head>
-<body>
-    <header class='header'>
-        <h1>Blog especializado en turismo</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Página para turismo" />
+        <meta name="author" content="Juan Londoño" />
+        <meta name="keywords" content="Viajes, Turismo, Guatapé" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./imgs/logo.jpeg"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <title>Pasaporte Nómada</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <img
+                    src="./imgs/logo.jpeg"
+                    height="90"
+                    alt="Logo"
+                    class="logo-icon"
+                    style="border-radius: 50%;"
+                />
+                <h1>Pasaporte Nómada</h1>
+                <ul>
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="lugares.html">Lugares</a></li>
+                    <li><a href="planes.html">Planes</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <nav class='menu'>
-        <ul>
-            <li><a href="https://developer.mozilla.org/es/">Principal</a></li>
-            <li><a href="https://www.w3schools.com/">Ayuda</a></li>
-            <li><a href="https://fontawesome.com/">Contactos</a></li>
-            <li><a href="https://iconos8.es/">Destinos</a></li>
-            <li><a href="https://vitejs.dev/">Sobre nosotros</a> </li>
-        </ul>
-    </nav>
+        <section class="banner">
+            <h2>¡Bienvenidos a Pasaporte Nómada!</h2>
+        </section>
 
-    <section class='seccion'>
-        <article>
-            <hgroup>
-                <h1>GUATAPE</h1>
-                <h2>¡Viajemos juntos a guatape!</h2>
-            </hgroup>
-
-            <time datetime="30-07-2024">Publicado: 30-07-2024</time>
-            <img src="./imgs/images.jfif" alt="imagen">
-            <p>¡Descubre la magia de Guatapé, un encantador destino en el corazón de Colombia! Este pintoresco pueblo es conocido por sus vibrantes colores, su impresionante embalse y la famosa <strong>Piedra del Peñol</strong>. Prepárate para una experiencia inolvidable mientras exploramos juntos este <small> rincón lleno de historia, cultura y belleza natural.</small></p>
-            <footer>
-                <p>Comentarios (0)</p>
-            </footer>
-            <address>
-                <a href="#">Reseñas</a>
-            </address>
-        </article>
-
-        <article>
-            <hgroup>
-                <h1>CARTAGENA</h1>
-                <h2>¡Vamos a Cartagena!</h2>
-            </hgroup>
-            <time datetime="30-07-2024">Publicado: 30-07-2024</time>
-            <p>¡Prepárate para enamorarte de Cartagena, una joya caribeña llena de historia, cultura y playas paradisíacas! Situada en la costa norte de Colombia, Cartagena es un destino vibrante que combina el encanto colonial con la belleza natural. Únete a nosotros y descubre por qué esta ciudad histórica es uno de los lugares más fascinantes de América Latina.</p>
-            <footer>
-                <p>Comentarios (0)</p>
-            </footer>
-        </article>
-    </section>
-    <aside class='columna'>
-        <blockquote cite='www.intergrupo.com'>
-            mensaje 1
-        </blockquote>
-        <blockquote cite='www.pmi.org'>
-            mensaje 2
-        </blockquote>
-    </aside>
-    <footer class='pie'>
-        Derechos reservados y copia;&copy; 2017-2024
-    </footer>
-</body>
+        <section class="welcome">
+            <p>
+                Descubre Colombia como nunca antes la habías imaginado. En
+                Pasaporte Nómada, te llevamos a explorar los rincones más
+                auténticos y sorprendentes de este país lleno de contrastes,
+                colores y vida. Desde las playas doradas del Caribe hasta los
+                frondosos paisajes de la Amazonía, pasando por montañas, selvas
+                y ciudades vibrantes, aquí encontrarás todo lo que necesitas
+                para planear tu próxima aventura.
+            </p>
+        </section>
+        <hr />
+        <div class="container">
+            <section class="showcase">
+                <div
+                    class="card"
+                    style="background-image: url(./imgs/cartagenaSC.jpg);"
+                >
+                    <div class="texts">
+                        <h3>Cartagena</h3>
+                    </div>
+                </div>
+                <div
+                    class="card"
+                    style="background-image: url(./imgs/GoticaSC.jpg);"
+                >
+                    <div class="texts">
+                        <h3>
+                            Santuario de Nuestra Señora del Rosario de Las Lajas
+                        </h3>
+                    </div>
+                </div>
+                <div
+                    class="card"
+                    style="background-image: url(./imgs/GuatapeSC.jpg);"
+                >
+                    <div class="texts">
+                        <h3>Guatape</h3>
+                    </div>
+                </div>
+                <div
+                    class="card"
+                    style="background-image: url(./imgs/MacarenaSC.jpg);"
+                >
+                    <div class="texts">
+                        <h3>Serrania de la macarena</h3>
+                    </div>
+                </div>
+                <div
+                    class="card"
+                    style="background-image: url(./imgs/SantamartaSC.jpg);"
+                >
+                    <div class="texts">
+                        <h3>Santa Marta</h3>
+                    </div>
+                </div>
+                <div
+                    class="card"
+                    style="background-image: url(./imgs/TatacoaSC.jpg);"
+                >
+                    <div class="texts">
+                        <h3>Desierto de tatacoa</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="enlace">
+            <a href="lugares.html" class="boton"><button>Ver más</button></a>
+        </div>
+        <footer>
+            <p>&copy; 2024 Pasaporte Nómada. Todos los derechos reservados.</p>
+        </footer>
+    </body>
 </html>
-
