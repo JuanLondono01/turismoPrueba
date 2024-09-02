@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Página para turismo" />
+    <meta name="author" content="Juan Londoño" />
+    <meta name="keywords" content="Viajes, Turismo, Guatapé" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imgs/logo.jpeg" type="image/x-icon" />
+    <script defer src="compras.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Pasaporte Nómada</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar" aria-label="Main Navigation">
+            <img
+                src="./imgs/logo.jpeg"
+                height="90"
+                alt="Logo"
+                class="logo-icon"
+                style="border-radius: 50%;"
+            />
+            <h1>Pasaporte Nómada</h1>
+            <ul>
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="lugares.html">Lugares</a></li>
+                <li><a href="planes.html">Planes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="compra">
+        <h2>Compra de Paquetes</h2>
+        <h3>Selecciona tu Destino</h3>
+        <div class="option-list">
+            <input type="text" list='paquetes' name="destino" aria-labelledby="paquetes" id='input-paquete'>
+            <datalist id='paquetes'>
+                <option>Cartagena de Indias</option>
+                <option>San Andrés</option>
+                <option>Desierto de la Tatacoa</option>
+                <option>Santa Marta</option>
+                <option>Serranía de la Macarena</option>
+                <option>Guatapé</option>
+                <option>San Agustín</option>
+                <option>Barichara</option>
+            </datalist>
+            <button id='selBtn'>Seleccionar</button>
+        </div>
+        <div class="tarjeta">
+            <img src="" id='img'>
+            <div class="info">
+                <h3 id='tituloDestino'>Destino no seleccionado</h3>
+                <p id='textoDestino'></p>
+                <p id="precio"></p>
+            </div>
+            <button id='buyBtn' class="pagar ">
+                Comprar
+            </button>
+        </div>
+    </section>
+</body>
+</html>

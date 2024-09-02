@@ -34,6 +34,8 @@ body {
     align-items: center;
     padding: 0 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
 }
 
 .nav-bar img {
@@ -374,6 +376,103 @@ footer{
     background-color: var(--primary);
 }
 
+
+.compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 600px;
+    margin-inline: auto;
+    padding: 30px;
+    margin-bottom: 2rem;
+}
+
+.option-list{
+    display: flex;
+    gap: 20px;
+    margin: 1rem 0 1rem 0;
+}
+
+.option-list input{
+    height: 2rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid black;
+    text-indent: 15px;
+}
+
+.option-list input:focus{
+    outline: none;
+}
+
+.option-list button{
+    height: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--texto);
+    padding-inline: 10px;
+    background-color: var(--neutro);
+    color: var(--texto);
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.option-list button:hover{
+    border: 1px solid var(--neutro);
+    background-color: var(--botones);
+    color: var(--neutro);
+
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+}
+
+.tarjeta img.active{
+    height: 300px;
+    border-radius: 10px;
+}
+
+.info{
+    margin-top: 2rem;
+}
+
+.info p:nth-child(3){
+    font-weight: bold;
+}
+
+.pagar{
+    display: none;
+}
+
+.pagar.active{
+    display: block;
+    height: 3rem;
+    width: 10rem;
+    font-size: 100%;
+    margin-top: .5rem;
+    border-radius: 8px;
+    border: 1px solid var(--neutro);
+    padding-inline: 10px;
+    background-color: var(--botones);
+    color: var(--neutro);
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.pagar.active:hover{
+    background-color: var(--primary);
+    border: 1px solid var(--neutro);
+    color: var(--neutro);
+}
 /* Mobile media queries */
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
@@ -449,6 +548,15 @@ footer{
 
     .paquete-info{
         width: 100%;
+    }
+
+    .compra{
+        width: 100%;
+    }
+
+    .tarjeta img.active{
+        height: 200px;
+        border-radius: 10px;
     }
 }
 
